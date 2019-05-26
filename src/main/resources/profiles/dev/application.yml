@@ -1,6 +1,20 @@
+environment: DEV
+
 server:
   port: 9090
-environment: DEV
+
+spring:
+  application:
+    name: LPR-Service
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:33244/foxtail_preview?useUnicode=true&useSSL=false
+    name: root
+    password: 1qazXSW@
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+
 mybatis:
-  configuration:
-    environment:
+  check-config-location: false
